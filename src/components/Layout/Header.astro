@@ -1,0 +1,52 @@
+---
+import "../../styles/global.css";
+
+const links = [
+  {
+    name:'Inicio',
+    href:'/'
+  },
+  {
+    name:'Cotizar',
+    href:'/cotizar'
+  },
+  {
+    name:'Sobre Nosotros',
+    href:'/sobre-nosotros'
+  },
+  {
+    name:'Contactos',
+    href:'/contactos'
+  },
+]
+---
+<header class="fixed z-50 top-[1px] bg-black text-white w-full text-lg font-[500]">
+   <div class="container flex justify-around items-center p-2 mx-auto">
+       <ul id="computer" class="flex justify-center gap-12">
+        {links.map(link => 
+            <li>
+              <a class="enlace" href={link.href}>{link.name}</a>
+            </li>
+        )}
+       </ul>
+   </div>
+</header>
+<script>
+    const enlaces = document.querySelectorAll('.enlace');
+    const currentPathname = window.location.pathname;    
+    function activeLink(){
+        enlaces.forEach(
+            
+            enlace=>{
+                enlace.pathname== currentPathname ? enlace.classList.add('active') : ''
+            })
+    }
+    activeLink()
+</script>
+<style>
+    .active{
+        background:blue;
+        padding:6px;
+        border-radius:20px;
+    }
+</style>
