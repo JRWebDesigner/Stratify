@@ -20,33 +20,90 @@ const links = [
   },
 ]
 ---
-<header class="sticky z-50 top-[1px] bg-black text-white w-full text-lg font-[500]">
-   <div class="container flex justify-around items-center p-2 mx-auto">
-       <ul id="computer" class="flex justify-center gap-12">
+
+<header class="sticky z-50 top-0 bg-black text-white w-full text-lg font-[500] shadow-lg">
+  <div class="container flex justify-between items-center p-4 mx-auto">
+    <div class="flex items-center gap-2">
+      <img src="/favicon.svg" alt="Logo" style="width:36px;height:36px;" />
+      <span class="font-bold text-xl tracking-wide text-[#4f8cff]">Stratify</span>
+    </div>
+    <nav id="computer" class="hidden md:block">
+      <ul class="flex justify-center gap-10">
         {links.map(link => 
-            <li>
-              <a class="enlace" href={link.href}>{link.name}</a>
-            </li>
+          <li>
+            <a class="enlace" href={link.href}>{link.name}</a>
+          </li>
         )}
-       </ul>
-   </div>
+      </ul>
+    </nav>
+    <button id="menu-btn" class="md:hidden flex items-center px-3 py-2 border border-white rounded text-white focus:outline-none" aria-label="Abrir menú">
+      <svg class="fill-current h-6 w-6" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <nav id="mobile" class="md:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-95 flex flex-col items-center justify-center gap-8 transition-all duration-300 invisible opacity-0">
+    <ul>
+      {links.map(link => 
+        <li>
+          <a class="enlace text-2xl" href={link.href}>{link.name}</a>
+        </li>
+      )}
+    </ul>
+    <button id="close-menu" class="mt-8 px-6 py-2 bg-[#4f8cff] text-white rounded-lg text-lg">Cerrar</button>
+  </nav>
 </header>
 <script>
-    const enlaces = document.querySelectorAll('.enlace');
-    const currentPathname = window.location.pathname;    
-    function activeLink(){
-        enlaces.forEach(
-            
-            enlace=>{
-                enlace.pathname== currentPathname ? enlace.classList.add('active') : ''
-            })
-    }
-    activeLink()
+  const enlaces = document.querySelectorAll('.enlace');
+  const currentPathname = window.location.pathname;
+  function activeLink(){
+    enlaces.forEach(
+      enlace=>{
+        enlace.pathname== currentPathname ? enlace.classList.add('active') : enlace.classList.remove('active');
+      })
+  }
+  activeLink();
+
+  // Responsive menu
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileNav = document.getElementById('mobile');
+  const closeMenu = document.getElementById('close-menu');
+  if(menuBtn && mobileNav && closeMenu){
+    menuBtn.onclick = () => {
+      mobileNav.classList.remove('invisible','opacity-0');
+      mobileNav.classList.add('visible','opacity-100');
+    };
+    closeMenu.onclick = () => {
+      mobileNav.classList.add('invisible','opacity-0');
+      mobileNav.classList.remove('visible','opacity-100');
+    };
+  }
 </script>
 <style>
-    .active{
-        background:blue;
-        padding:6px;
-        border-radius:20px;
-    }
+  .active{
+    background:#15599a;
+    color:#fff;
+    padding:6px 20px;
+    border-radius:20px;
+    box-shadow:0 2px 8px #15599a88;
+    transition:background 0.2s;
+  }
+  .enlace{
+    transition:color 0.2s, background 0.2s;
+    padding:4px 12px;
+    border-radius:12px;
+    font-weight:500;
+    text-decoration:none;
+    color:#fff;
+  }
+  .enlace:hover{
+    background:#4f8cff;
+    color:#fff;
+  }
+  @media (max-width: 768px){
+    #computer{display:none;}
+    #mobile{display:flex;}
+  }
+  @media (min-width: 769px){
+    #computer{display:block;}
+    #mobile{display:none;}
+  }
 </style>
