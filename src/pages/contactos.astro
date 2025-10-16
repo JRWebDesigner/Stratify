@@ -1,0 +1,369 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContactForm from '../components/ContactForm';
+---
+
+<Layout title="Ponte en Contacto - Stratify - Desarrollo web">
+  <main class="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
+    <!-- Hero Section -->
+    <section class="relative py-20 overflow-hidden">
+      <!-- Background Elements -->
+      <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-transparent to-blue-900/20 z-0"></div>
+      <div class="absolute w-80 h-80 rounded-full bg-purple-600 opacity-10 blur-3xl -top-20 -left-20"></div>
+      <div class="absolute w-96 h-96 rounded-full bg-blue-600 opacity-10 blur-3xl -bottom-32 -right-20"></div>
+      
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-5xl md:text-7xl font-bold mb-6">
+            Ponte en <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">Contacto</span>
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Estamos listos para convertir tus ideas en realidad. Hablemos sobre tu proyecto.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div class="flex items-center gap-2 text-gray-300">
+              <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+              <span>Disponibilidad inmediata</span>
+            </div>
+            <div class="flex items-center gap-2 text-gray-300">
+              <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+              <span>Respuesta en menos de 2 horas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-20 relative">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+          
+          <!-- Contact Information -->
+          <div class="space-y-8">
+            <div>
+              <h2 class="text-3xl md:text-4xl font-bold mb-4">Hablemos de tu proyecto</h2>
+              <p class="text-gray-300 text-lg leading-relaxed">
+                ¿Tienes una idea innovadora? ¿Necesitas modernizar tu presencia digital? 
+                Estamos aquí para escucharte y crear juntos la solución perfecta para tu negocio.
+              </p>
+            </div>
+
+            <!-- Contact Methods -->
+            <div class="space-y-6">
+              <!-- WhatsApp -->
+              <div class="flex items-start gap-4 p-6 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 hover:border-green-500 transition-all duration-300">
+                <div class="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893-.001-3.189-1.262-6.187-3.55-8.444"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold mb-2">WhatsApp Business</h3>
+                  <p class="text-gray-300 mb-2">Comunícate directamente con nuestro equipo</p>
+                  <a href="https://wa.me/59168071168" class="text-green-400 hover:text-green-300 font-semibold text-lg flex items-center gap-2 transition-colors duration-300">
+                    +591 68071168
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="flex items-start gap-4 p-6 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300">
+                <div class="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold mb-2">Correo Electrónico</h3>
+                  <p class="text-gray-300 mb-2">Envíanos un mensaje detallado de tu proyecto</p>
+                  <a href="mailto:contacto@stratify.com" class="text-blue-400 hover:text-blue-300 font-semibold text-lg flex items-center gap-2 transition-colors duration-300">
+                    contacto@stratify.com
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="flex items-start gap-4 p-6 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300">
+                <div class="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold mb-2">Ubicación</h3>
+                  <p class="text-gray-300 mb-2">Trabajamos contigo sin importar tu ubicación</p>
+                  <span class="text-purple-400 font-semibold text-lg">Servicios Remotos & Presenciales</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Business Hours -->
+            <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 p-6">
+              <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                <svg class="w-5 h-5 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                Horario de Atención
+              </h3>
+              <div class="space-y-2">
+                <div class="flex justify-between text-gray-300">
+                  <span>Lunes - Viernes</span>
+                  <span class="font-semibold text-white">8:00 AM - 8:00 PM</span>
+                </div>
+                <div class="flex justify-between text-gray-300">
+                  <span>Sábados</span>
+                  <span class="font-semibold text-white">9:00 AM - 2:00 PM</span>
+                </div>
+                <div class="flex justify-between text-gray-300">
+                  <span>Domingos</span>
+                  <span class="font-semibold text-yellow-400">Solo emergencias</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 p-8">
+            <div class="mb-8">
+              <h2 class="text-3xl font-bold mb-4">Envíanos un Mensaje</h2>
+              <p class="text-gray-300">Completa el formulario y nos pondremos en contacto contigo en menos de 2 horas.</p>
+            </div>
+
+            <form class="space-y-6" netlify>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="nombre" class="block text-sm font-medium text-gray-300 mb-2">Nombre Completo *</label>
+                  <input 
+                    type="text" 
+                    id="nombre" 
+                    name="nombre" 
+                    required 
+                    class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-white placeholder-gray-400"
+                    placeholder="Tu nombre completo"
+                  >
+                </div>
+                <div>
+                  <label for="empresa" class="block text-sm font-medium text-gray-300 mb-2">Empresa</label>
+                  <input 
+                    type="text" 
+                    id="empresa" 
+                    name="empresa" 
+                    class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-white placeholder-gray-400"
+                    placeholder="Nombre de tu empresa"
+                  >
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email *</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-white placeholder-gray-400"
+                    placeholder="tu@email.com"
+                  >
+                </div>
+                <div>
+                  <label for="telefono" class="block text-sm font-medium text-gray-300 mb-2">Teléfono</label>
+                  <input 
+                    type="tel" 
+                    id="telefono" 
+                    name="telefono" 
+                    class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-white placeholder-gray-400"
+                    placeholder="+591 XXX XXX XXX"
+                  >
+                </div>
+              </div>
+
+              <div>
+                <label for="servicio" class="block text-sm font-medium text-gray-300 mb-2">Servicio de Interés</label>
+                <select 
+                  id="servicio" 
+                  name="servicio" 
+                  class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-white"
+                >
+                  <option value="">Selecciona un servicio</option>
+                  <option value="desarrollo-web">Desarrollo Web</option>
+                  <option value="ecommerce">E-commerce</option>
+                  <option value="seo">SEO y Marketing Digital</option>
+                  <option value="mantenimiento">Mantenimiento Web</option>
+                  <option value="consultoria">Consultoría</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="mensaje" class="block text-sm font-medium text-gray-300 mb-2">Mensaje *</label>
+                <textarea 
+                  id="mensaje" 
+                  name="mensaje" 
+                  rows="5" 
+                  required 
+                  class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-white placeholder-gray-400 resize-none"
+                  placeholder="Cuéntanos sobre tu proyecto, objetivos y cualquier requerimiento específico..."
+                ></textarea>
+              </div>
+
+              <div class="flex items-center">
+                <input 
+                  type="checkbox" 
+                  id="newsletter" 
+                  name="newsletter" 
+                  class="w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500 focus:ring-2"
+                >
+                <label for="newsletter" class="ml-2 text-sm text-gray-300">
+                  Quiero recibir actualizaciones y ofertas especiales de Stratify
+                </label>
+              </div>
+
+              <button 
+                type="submit"
+                class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gradient-to-b from-gray-900 to-black relative">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">
+            Preguntas <span class="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Frecuentes</span>
+          </h2>
+          <p class="text-xl text-gray-300">Resolvemos tus dudas más comunes</p>
+        </div>
+
+        <div class="max-w-3xl mx-auto space-y-6">
+          <!-- FAQ Item 1 -->
+          <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 p-6">
+            <button class="flex justify-between items-center w-full text-left">
+              <h3 class="text-xl font-bold text-white">¿Cuánto tiempo toma desarrollar un sitio web?</h3>
+              <svg class="w-6 h-6 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="mt-4 text-gray-300">
+              <p>El tiempo de desarrollo varía según la complejidad del proyecto:</p>
+              <ul class="mt-2 space-y-1">
+                <li>• Landing Page: 3-5 días</li>
+                <li>• Sitio Corporativo: 1-2 semanas</li>
+                <li>• E-commerce: 2-4 semanas</li>
+                <li>• Aplicación Web: 4+ semanas</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 p-6">
+            <button class="flex justify-between items-center w-full text-left">
+              <h3 class="text-xl font-bold text-white">¿Qué métodos de pago aceptan?</h3>
+              <svg class="w-6 h-6 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="mt-4 text-gray-300">
+              <p>Aceptamos múltiples métodos de pago para tu comodidad:</p>
+              <ul class="mt-2 space-y-1">
+                <li>• Transferencia bancaria</li>
+                <li>• Depósitos</li>
+                <li>• PayPal</li>
+                <li>• Criptomonedas (consultar)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 p-6">
+            <button class="flex justify-between items-center w-full text-left">
+              <h3 class="text-xl font-bold text-white">¿Ofrecen mantenimiento después del desarrollo?</h3>
+              <svg class="w-6 h-6 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="mt-4 text-gray-300">
+              <p>Sí, ofrecemos planes de mantenimiento que incluyen:</p>
+              <ul class="mt-2 space-y-1">
+                <li>• Actualizaciones de seguridad</li>
+                <li>• Backups regulares</li>
+                <li>• Soporte técnico</li>
+                <li>• Actualizaciones de contenido</li>
+                <li>• Monitoreo del sitio</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 relative">
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10"></div>
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">
+            ¿Listo para comenzar tu <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">proyecto</span>?
+          </h2>
+          <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Contáctanos hoy mismo y recibe una consultoría gratuita de 30 minutos para tu proyecto.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href="https://wa.me/59168071168" 
+              class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl flex items-center justify-center gap-2"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893-.001-3.189-1.262-6.187-3.55-8.444"/>
+              </svg>
+              WhatsApp Inmediato
+            </a>
+            <a 
+              href="mailto:contacto@stratify.com" 
+              class="bg-transparent border-2 border-gray-600 hover:bg-white hover:text-black text-gray-300 font-bold py-4 px-8 rounded-xl transition-all duration-300 flex items-center justify-center gap-2"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+              Enviar Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    /* Smooth animations for FAQ */
+    details > summary {
+      list-style: none;
+    }
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
+    details[open] summary ~ * {
+      animation: sweep .5s ease-in-out;
+    }
+    @keyframes sweep {
+      0%    {opacity: 0; transform: translateY(-10px)}
+      100%  {opacity: 1; transform: translateY(0)}
+    }
+  </style>
+</Layout>
