@@ -1,136 +1,463 @@
-<section class="relative text-white font-bold p-10 flex justify-center items-center h-[80dvh]">
-  <div class="absolute w-full h-[90%] bg-radial from-purple-950 from-40% to-black blur-xl z-0"/>
-  <div class="container mx-auto z-10 flex flex-col justify-center items-center gap-14">
-    <h1 class="z-10 text-4xl md:text-5xl text-center">Obten tu sitio web ahora y se parte de esta nueva era tecnologica</h1>
-    <div>
-      <a href="" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg transition duration-300 text-2xl md:text-3xl">Empezar ahora</a>
-      <a href="" class="ml-4 bg-transparent hover:bg-white hover:text-black text-gray-400 font-semibold py-4 px-8 rounded-lg transition duration-300">Ver Nuestros Proyectos</a>
+---
+// Componente Astro mejorado completo
+---
+
+<section class="relative text-white font-bold p-6 md:p-10 flex justify-center items-center min-h-[80dvh] overflow-hidden">
+  <!-- Fondo mejorado -->
+  <div class="absolute inset-0 bg-gradient-to-br from-purple-900 via-black to-blue-900 z-0" />
+  
+  <!-- Elementos decorativos de fondo -->
+  <div class="absolute w-72 h-72 rounded-full bg-purple-600 opacity-20 blur-3xl -top-20 -left-20 animate-float" />
+  <div class="absolute w-96 h-96 rounded-full bg-blue-600 opacity-20 blur-3xl -bottom-32 -right-20 animate-float-delayed" />
+  <div class="absolute w-64 h-64 rounded-full bg-indigo-600 opacity-15 blur-3xl top-1/2 left-1/3 animate-float-slow" />
+  
+  <!-- Contenido principal -->
+  <div class="container mx-auto z-10 flex flex-col justify-center items-center gap-10 md:gap-14 text-center">
+    <!-- Título con mejor jerarquía -->
+    <div class="max-w-4xl">
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-4 md:mb-6">
+        Obtén tu <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">sitio web</span> ahora
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-300 font-normal max-w-2xl mx-auto">
+        Únete a la nueva era tecnológica con soluciones web modernas y profesionales
+      </p>
+    </div>
+    
+    <!-- Botones mejorados -->
+    <div class="flex flex-col sm:flex-row gap-4 md:gap-6 mt-4">
+      <a 
+        href="#" 
+        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 text-lg md:text-xl transform hover:-translate-y-1 hover:shadow-2xl flex items-center justify-center gap-2"
+      >
+        <span>Empezar ahora</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg>
+      </a>
+      <a 
+        href="/#proyectos" 
+        class="bg-transparent border-2 border-gray-700 hover:bg-white hover:text-black text-gray-300 font-semibold py-4 px-8 rounded-xl transition-all duration-300 flex items-center justify-center gap-2"
+      >
+        <span>Ver Nuestros Proyectos</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z" clip-rule="evenodd" />
+        </svg>
+      </a>
+    </div>
+    
+    <!-- Elementos de confianza -->
+    <div class="mt-6 flex flex-col md:flex-row items-center gap-8 text-gray-400 text-sm md:text-base">
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+        </svg>
+        <span>Diseños responsivos</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+        </svg>
+        <span>Entrega rápida</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+        </svg>
+        <span>Soporte 24/7</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Indicador de scroll para móviles -->
+  <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10 animate-bounce md:hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+    </svg>
+  </div>
+</section>
+
+<!-- Sección Estadísticas Mejorada -->
+<section id="estadisticas" class="py-20 bg-gradient-to-b from-black to-gray-900 relative overflow-hidden">
+  <!-- Elementos decorativos -->
+  <div class="absolute w-80 h-80 rounded-full bg-purple-600 opacity-10 blur-3xl -top-40 -left-20"></div>
+  <div class="absolute w-80 h-80 rounded-full bg-blue-600 opacity-10 blur-3xl -bottom-40 -right-20"></div>
+  
+  <div class="container mx-auto px-6 md:px-10 text-white relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Nuestro <span class="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Impacto</span></h2>
+      <p class="text-xl text-gray-300 max-w-2xl mx-auto">Cifras que demuestran nuestra trayectoria y compromiso con la excelencia</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
+      <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:transform hover:-translate-y-2">
+        <div class="text-6xl font-bold text-orange-400 mb-4">100+</div>
+        <p class="text-xl text-gray-300">Clientes Satisfechos</p>
+        <div class="w-16 h-1 bg-orange-400 mx-auto mt-4"></div>
+      </div>
+      
+      <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:-translate-y-2">
+        <div class="text-6xl font-bold text-blue-400 mb-4">250+</div>
+        <p class="text-xl text-gray-300">Proyectos Completados</p>
+        <div class="w-16 h-1 bg-blue-400 mx-auto mt-4"></div>
+      </div>
+      
+      <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-green-500 transition-all duration-300 hover:transform hover:-translate-y-2">
+        <div class="text-6xl font-bold text-green-400 mb-4">5</div>
+        <p class="text-xl text-gray-300">Años de Experiencia</p>
+        <div class="w-16 h-1 bg-green-400 mx-auto mt-4"></div>
+      </div>
     </div>
   </div>
 </section>
-<section id="estadisticas" class="">
-  <div class="container mx-auto px-10 py-20 text-white flex flex-col gap-10">
-    <h2 class="text-4xl font-bold text-center">Nuestras Estadísticas</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
-      <div>
-        <h3 class="text-5xl font-bold text-orange-400">100+</h3>
-        <p class="mt-2 text-lg">Clientes Satisfechos</p>
+
+<!-- Sección ¿Por qué elegirnos? Mejorada -->
+<section class="py-20 bg-black relative overflow-hidden">
+  <!-- Elementos decorativos -->
+  <div class="absolute w-96 h-96 rounded-full bg-indigo-600 opacity-5 blur-3xl top-1/4 -right-40"></div>
+  
+  <div class="container mx-auto px-6 md:px-10 text-white relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">¿Por qué <span class="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">elegirnos</span>?</h2>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto">Ofrecemos soluciones integrales que combinan diseño innovador con tecnología de vanguardia</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:transform hover:-translate-y-2 group">
+        <div class="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-4">Diseño Personalizado</h3>
+        <p class="text-gray-300 leading-relaxed">Creamos diseños únicos que reflejan la identidad de tu marca y capturan la atención de tu audiencia.</p>
       </div>
-      <div>
-        <h3 class="text-5xl font-bold text-orange-400">250+</h3>
-        <p class="mt-2 text-lg">Proyectos Completados</p>
+      
+      <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:-translate-y-2 group">
+        <div class="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-4">Optimización SEO</h3>
+        <p class="text-gray-300 leading-relaxed">Implementamos estrategias avanzadas de SEO para maximizar tu visibilidad en motores de búsqueda.</p>
       </div>
-      <div>
-        <h3 class="text-5xl font-bold text-orange-400">5</h3>
-        <p class="mt-2 text-lg">Años de Experiencia</p>
+      
+      <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-green-500 transition-all duration-300 hover:transform hover:-translate-y-2 group">
+        <div class="w-14 h-14 bg-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-4">Soporte Continuo</h3>
+        <p class="text-gray-300 leading-relaxed">Ofrecemos soporte técnico permanente para garantizar el funcionamiento óptimo de tu sitio web.</p>
       </div>
     </div>
   </div>
 </section>
-<section>
-  <div class="container mx-auto px-10 py-20 text-white flex flex-col gap-10">
-    <h2 class="text-4xl font-bold text-center">¿Por qué elegirnos?</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-      <div class="border-2 p-6 rounded-lg shadow-xl hover:shadow-purpple-500/50 transition-shadow duration-300">
-        <h3 class="text-2xl font-semibold mb-4">Diseño Personalizado</h3>
-        <p>Nos aseguramos de que tu sitio web refleje la identidad única de tu marca con diseños a medida.</p>
-      </div>
-      <div class="border-2 p-6 rounded-lg shadow-xl hover:shadow-purpple-500/50 transition-shadow duration-300">
-        <h3 class="text-2xl font-semibold mb-4">Optimización SEO</h3>
-        <p>Implementamos las mejores prácticas de SEO para mejorar la visibilidad de tu sitio en los motores de búsqueda.</p>
-      </div>
-      <div class="border-2 p-6 rounded-lg shadow-xl hover:shadow-purpple-500/50 transition-shadow duration-300">
-        <h3 class="text-2xl font-semibold mb-4">Soporte Continuo</h3>
-        <p>Ofrecemos soporte técnico y mantenimiento continuo para asegurar que tu sitio web funcione sin problemas.</p>
-      </div>
+
+<!-- Sección Paquetes Mejorada -->
+<section id="paquetes" class="py-20 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
+  <!-- Elementos decorativos -->
+  <div class="absolute w-80 h-80 rounded-full bg-purple-600 opacity-10 blur-3xl -top-20 -left-20"></div>
+  <div class="absolute w-80 h-80 rounded-full bg-blue-600 opacity-10 blur-3xl -bottom-20 -right-20"></div>
+  
+  <div class="container mx-auto px-6 md:px-10 text-white relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Nuestros <span class="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Paquetes</span></h2>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto">Soluciones adaptadas a cada necesidad y presupuesto</p>
     </div>
-  </div>
-</section>
-<section id="paquetes">
-  <div class="container mx-auto px-10 py-20 text-white flex flex-col gap-10">
-    <h2 class="text-4xl font-bold text-center">Nuestros Paquetes</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col">
-        <h3 class="text-2xl font-semibold mb-4">Básico</h3>
-        <p class="text-lg mb-4">Ideal para pequeñas empresas y proyectos personales.</p>
-        <ul class="mb-4 flex-grow">
-          <li class="mb-2">- Diseño personalizado</li>
-          <li class="mb-2">- Optimización SEO básica</li>
-          <li class="mb-2">- Soporte por 1 mes</li>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Plan Básico -->
+      <div class="bg-gradient-to-b from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 flex flex-col h-full transition-all duration-300 hover:border-blue-500">
+        <div class="mb-6">
+          <h3 class="text-2xl font-bold mb-2">Básico</h3>
+          <p class="text-gray-300 mb-4">Ideal para pequeñas empresas y proyectos personales</p>
+          <div class="text-4xl font-bold text-white mb-2">400Bs</div>
+          <div class="text-gray-400 text-sm">Pago único</div>
+        </div>
+        
+        <ul class="mb-8 flex-grow space-y-3">
+          <li class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-3" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span>Diseño personalizado</span>
+          </li>
+          <li class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-3" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span>Optimización SEO básica</span>
+          </li>
+          <li class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-3" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span>Soporte por 1 mes</span>
+          </li>
         </ul>
-        <p class="text-3xl font-bold mb-4">400Bs</p>
-        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 cursor-pointer rounded">Contratar</button>
+        
+        <button class="w-full bg-gray-700 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-1">
+          Contratar
+        </button>
       </div>
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col border-2 border-purple-500">
-        <h3 class="text-2xl font-semibold mb-4">Profesional</h3>
-        <p class="text-lg mb-4">Perfecto para empresas en crecimiento que buscan expandir su presencia en línea.</p>
-        <ul class="mb-4 flex-grow justify-center items-center">
-          <li class="mb-2"> - Diseño personalizado avanzado</li>
-          <li class="mb-2">- Optimización SEO completa</li>
-          <li class="mb-2">- Soporte por 3 meses</li>
-          <li class="mb-2">- Integración de redes sociales</li>
+      
+      <!-- Plan Profesional (Destacado) -->
+      <div class="bg-gradient-to-b from-purple-900/30 to-gray-900 p-8 rounded-2xl border-2 border-purple-500 flex flex-col h-full relative transform scale-105 shadow-xl shadow-purple-500/20">
+        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+          <span class="bg-purple-500 text-white px-4 py-1 rounded-full text-sm font-bold">MÁS POPULAR</span>
+        </div>
+        
+        <div class="mb-6">
+          <h3 class="text-2xl font-bold mb-2">Profesional</h3>
+          <p class="text-gray-300 mb-4">Perfecto para empresas en crecimiento</p>
+          <div class="text-4xl font-bold text-white mb-2">900Bs</div>
+          <div class="text-gray-400 text-sm">Pago único</div>
+        </div>
+        
+        <ul class="mb-8 flex-grow space-y-3">
+          <li class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-3" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span>Diseño personalizado avanzado</span>
+          </li>
+          <li class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-3" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span>Optimización SEO completa</span>
+          </li>
+          <li class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-3" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span>Soporte por 3 meses</span>
+          </li>
+          <li class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-3" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span>Integración de redes sociales</span>
+          </li>
         </ul>
-        <p class="text-3xl font-bold mb-4">900Bs</p>
-        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer"><a>Contratar</a></button>
+        
+        <button class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-1">
+          Contratar
+        </button>
       </div>
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col">
-        <h3 class="text-2xl font-semibold mb-4">Empresarial</h3>
-        <p class="text-lg mb-4">La solución definitiva para grandes empresas que necesitan una presencia en línea robusta.</p>
-        <ul class="mb-4 flex-grow">
-          <li class="mb-2">- Diseño personalizado premium</li>
-          <li class="mb-2">- Optimización SEO avanzada</li>
-          <li class="mb-2">- Soporte por 6 meses</li>
-          <li class="mb-2">- Integración de comercio electrónico</li>
-          <li class="mb-2">- Análisis y reportes mensuales</li>
+      
+      <!-- Plan Empresarial -->
+      <div class="bg-gradient-to-b from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 flex flex-col h-full transition-all duration-300 hover:border-blue-500">
+        <div class="mb-6">
+          <h3 class="text-2xl font-bold mb-2">Empresarial</h3>
+          <p class="text-gray-300 mb-4">Solución completa para grandes empresas</p>
+          <div class="text-4xl font-bold text-white mb-2">3000Bs</div>
+          <div class="text-gray-400 text-sm">Pago único</div>
+        </div>
+        
+        <ul class="mb-8 flex-grow space-y-3">
+          <li class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-3" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span>Diseño personalizado premium</span>
+          </li>
+          <li class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-3" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span>Optimización SEO avanzada</span>
+          </li>
+          <li class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-3" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span>Soporte por 6 meses</span>
+          </li>
+          <li class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-3" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span>Integración de comercio electrónico</span>
+          </li>
+          <li class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-3" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span>Análisis y reportes mensuales</span>
+          </li>
         </ul>
-        <p class="text-3xl font-bold mb-4">3000Bs</p>
-        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 cursor-pointer rounded">Contratar</button>
+        
+        <button class="w-full bg-gray-700 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-1">
+          Contratar
+        </button>
       </div>
     </div>
   </div>
 </section>
-<section id="historia">
-  <div class="container mx-auto px-10 py-20 text-white flex flex-col gap-10">
-    <h2 class="text-4xl font-bold text-center">Nuestra Historia</h2>
-    <p class="text-lg leading-relaxed">
-      Stratify fue fundada en 2023 con la misión de ayudar a pequeñas y medianas empresas a establecer una presencia en línea efectiva. Con un equipo de expertos en diseño web, desarrollo y marketing digital, hemos trabajado con más de 100 clientes satisfechos en diversos sectores. Nuestra pasión por la innovación y el compromiso con la calidad nos impulsa a ofrecer soluciones que realmente marcan la diferencia.
-    </p>
-  </div>
-  <div class="container mx-auto px-10 py-20 text-white flex flex-col gap-10">
-    <h2 class="text-4xl font-bold text-center">Testimonios</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-        <p class="italic">"Stratify transformó nuestra presencia en línea. Su equipo fue profesional y atento a nuestras necesidades. ¡Altamente recomendados!"</p>
-        <p class="mt-4 font-bold">- Ana Pérez, CEO de TechSolutions</p>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-        <p class="italic">"Gracias a Stratify, nuestro sitio web ahora es moderno y fácil de navegar. Hemos visto un aumento significativo en el tráfico y las ventas."</p>
-        <p class="mt-4 font-bold">- Carlos Gómez, Fundador de EcoShop</p>
+
+<!-- Sección Historia y Testimonios Mejorada -->
+<section id="historia" class="py-20 bg-black relative overflow-hidden">
+  <!-- Elementos decorativos -->
+  <div class="absolute w-96 h-96 rounded-full bg-blue-600 opacity-5 blur-3xl top-1/2 -left-40"></div>
+  
+  <div class="container mx-auto px-6 md:px-10 text-white relative z-10">
+    <!-- Historia -->
+    <div class="max-w-4xl mx-auto text-center mb-20">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">Nuestra <span class="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Historia</span></h2>
+      <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 md:p-10 rounded-2xl border border-gray-700">
+        <p class="text-lg md:text-xl leading-relaxed text-gray-300 text-left">
+          <span class="text-2xl font-bold text-white">Stratify</span> fue fundada en 2023 con la misión de ayudar a pequeñas y medianas empresas a establecer una presencia en línea efectiva. Con un equipo de expertos en diseño web, desarrollo y marketing digital, hemos trabajado con más de 100 clientes satisfechos en diversos sectores. Nuestra pasión por la innovación y el compromiso con la calidad nos impulsan a ofrecer soluciones que realmente marcan la diferencia.
+        </p>
       </div>
     </div>
-</section>
-<section id="proyectos">
-  <div class="container mx-auto px-10 py-20 text-white flex flex-col gap-10">
-    <h2 class="text-4xl font-bold text-center">Nuestros Proyectos</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-        <img src="/images/project1.jpg" alt="Proyecto 1" class="w-full h-48 object-cover rounded-t-lg">
-        <h3 class="text-xl font-semibold mt-4">Proyecto 1</h3>
-        <p class="mt-2">Descripción breve del proyecto y su impacto.</p>
-        <a class="text-blue-500 hover:underline" >Visitar Sitio</a>
+    
+    <!-- Testimonios -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Lo que dicen <span class="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">nuestros clientes</span></h2>
+      <p class="text-xl text-gray-300 max-w-2xl mx-auto">Experiencias reales de empresas que confiaron en nosotros</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300">
+        <div class="text-yellow-400 text-2xl mb-4">★★★★★</div>
+        <p class="text-lg italic text-gray-300 mb-6">"Stratify transformó nuestra presencia en línea. Su equipo fue profesional y atento a nuestras necesidades. El sitio web que desarrollaron superó todas nuestras expectativas y hemos visto un aumento del 40% en leads cualificados. ¡Altamente recomendados!"</p>
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-4">AP</div>
+          <div>
+            <p class="font-bold text-white">Ana Pérez</p>
+            <p class="text-gray-400">CEO de TechSolutions</p>
+          </div>
+        </div>
       </div>
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-        <img src="/images/project2.jpg" alt="Proyecto 2" class="w-full h-48 object-cover rounded-t-lg">
-        <h3 class="text-xl font-semibold mt-4">Proyecto 2</h3>
-        <p class="mt-2">Descripción breve del proyecto y su impacto.</p>
-        <a class="text-blue-500 hover:underline" >Visitar Sitio</a>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-        <img src="/images/project3.jpg" alt="Proyecto 3" class="w-full h-48 object-cover rounded-t-lg">
-        <h3 class="text-xl font-semibold mt-4">Proyecto 3</h3>
-        <p class="mt-2">Descripción breve del proyecto y su impacto.</p>
-        <a class="text-blue-500 hover:underline" >Visitar Sitio</a>
+      
+      <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300">
+        <div class="text-yellow-400 text-2xl mb-4">★★★★★</div>
+        <p class="text-lg italic text-gray-300 mb-6">"Gracias a Stratify, nuestro sitio web ahora es moderno, fácil de navegar y completamente optimizado para móviles. Hemos visto un aumento significativo en el tráfico orgánico y las conversiones. Su soporte post-venta es excepcional, siempre disponibles para resolver cualquier duda."</p>
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-4">CG</div>
+          <div>
+            <p class="font-bold text-white">Carlos Gómez</p>
+            <p class="text-gray-400">Fundador de EcoShop</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Sección Proyectos Mejorada -->
+<section id="proyectos" class="py-20 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
+  <!-- Elementos decorativos -->
+  <div class="absolute w-80 h-80 rounded-full bg-purple-600 opacity-10 blur-3xl -top-20 -right-20"></div>
+  
+  <div class="container mx-auto px-6 md:px-10 text-white relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Nuestros <span class="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Proyectos</span></h2>
+      <p class="text-xl text-gray-300 max-w-2xl mx-auto">Una muestra de nuestro trabajo y creatividad</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Proyecto 1 -->
+      <div class="bg-gradient-to-b from-gray-800 to-gray-900 rounded-2xl overflow-hidden border border-gray-700 hover:border-purple-500 transition-all duration-300 group">
+        <div class="h-48 bg-gradient-to-r from-purple-600 to-blue-600 relative overflow-hidden">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+            <span class="text-white text-xl font-bold">TechSolutions</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Portal Corporativo</h3>
+          <p class="text-gray-300 mb-4">Sitio web corporativo moderno con integración de CRM y dashboard administrativo.</p>
+          <div class="flex justify-between items-center">
+            <a class="text-blue-400 hover:text-blue-300 font-semibold flex items-center gap-1 transition-colors duration-300">
+              <span>Visitar Sitio</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <span class="text-xs bg-purple-600 text-white px-2 py-1 rounded-full">Corporativo</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Proyecto 2 -->
+      <div class="bg-gradient-to-b from-gray-800 to-gray-900 rounded-2xl overflow-hidden border border-gray-700 hover:border-blue-500 transition-all duration-300 group">
+        <div class="h-48 bg-gradient-to-r from-green-600 to-teal-600 relative overflow-hidden">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+            <span class="text-white text-xl font-bold">EcoShop</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Tienda Online</h3>
+          <p class="text-gray-300 mb-4">E-commerce completo con pasarela de pagos, gestión de inventario y análisis de ventas.</p>
+          <div class="flex justify-between items-center">
+            <a class="text-blue-400 hover:text-blue-300 font-semibold flex items-center gap-1 transition-colors duration-300">
+              <span>Visitar Sitio</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <span class="text-xs bg-blue-600 text-white px-2 py-1 rounded-full">E-commerce</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Proyecto 3 -->
+      <div class="bg-gradient-to-b from-gray-800 to-gray-900 rounded-2xl overflow-hidden border border-gray-700 hover:border-green-500 transition-all duration-300 group">
+        <div class="h-48 bg-gradient-to-r from-orange-600 to-red-600 relative overflow-hidden">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+            <span class="text-white text-xl font-bold">CreativeLab</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Portafolio Digital</h3>
+          <p class="text-gray-300 mb-4">Sitio web portfolio interactivo con galería de proyectos y sistema de contacto avanzado.</p>
+          <div class="flex justify-between items-center">
+            <a class="text-blue-400 hover:text-blue-300 font-semibold flex items-center gap-1 transition-colors duration-300">
+              <span>Visitar Sitio</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <span class="text-xs bg-green-600 text-white px-2 py-1 rounded-full">Portafolio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-12">
+      <a href="/proyectos" class="inline-flex items-center gap-2 bg-transparent border-2 border-gray-700 hover:bg-white hover:text-black text-gray-300 font-semibold py-3 px-8 rounded-xl transition-all duration-300">
+        <span>Ver todos los proyectos</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Animaciones y estilos personalizados */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-float-delayed {
+    animation: float 6s ease-in-out 2s infinite;
+  }
+  
+  .animate-float-slow {
+    animation: float 8s ease-in-out 4s infinite;
+  }
+  
+  .glow {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+</style>
