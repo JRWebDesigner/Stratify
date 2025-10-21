@@ -1,41 +1,17 @@
 ---
-import "../../styles/global.css";
-
-const links = [
-  {
-    name:'Inicio',
-    href:'/'
-  },
-  {
-    name:'Cotizar',
-    href:'/cotizar'
-  },
-  {
-    name:'Nuestros Servicios',
-    href:'/servicios'
-  },
-  {
-    name:'Proyectos',
-    href:'/proyectos'
-  },
-  {
-    name:'Contactos',
-    href:'/contactos'
-  },
-]
+import { menuPrincipal } from '../../lib/data.js'; 
 ---
 
 <header class="sticky z-50 top-0 bg-black text-white w-full text-lg font-[500] shadow-lg">
   <div class="container flex justify-between items-center p-4 mx-auto">
     <div class="flex items-center gap-2">
-      <img src="/favicon.svg" alt="Logo" style="width:36px;height:36px;" />
-      <span class="font-bold text-xl tracking-wide text-[#4f8cff]">Stratify</span>
+      <span class="font-bold text-xl tracking-wide text-[#fff]">Stratify</span>
     </div>
     <nav id="computer" class="hidden md:block">
       <ul class="flex justify-center gap-10">
-        {links.map(link => 
+        {menuPrincipal.map(link => 
           <li>
-            <a class="enlace" href={link.href}>{link.name}</a>
+            <a class="enlace" href={link.href}> {link.name} </a>
           </li>
         )}
       </ul>
@@ -46,7 +22,7 @@ const links = [
   </div>
   <nav id="mobile" class="md:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-95 flex flex-col items-center justify-center gap-8 transition-all duration-300 invisible opacity-0">
     <ul>
-      {links.map(link => 
+      {menuPrincipal.map(link => 
         <li>
           <a class="enlace text-2xl" href={link.href}>{link.name}</a>
         </li>
@@ -61,12 +37,11 @@ const links = [
   function activeLink(){
     enlaces.forEach(
       enlace=>{
-        enlace.pathname== currentPathname ? enlace.classList.add('active') : enlace.classList.remove('active');
+        enlace.pathname == currentPathname ? enlace.classList.add('active') : enlace.classList.remove('active');
       })
   }
   activeLink();
 
-  // Responsive menu
   const menuBtn = document.getElementById('menu-btn');
   const mobileNav = document.getElementById('mobile');
   const closeMenu = document.getElementById('close-menu');

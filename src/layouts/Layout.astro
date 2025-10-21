@@ -3,6 +3,7 @@ const { title } = Astro.props;
 
 import Header from '../components/Layout/Header.astro'
 import Footer from '../components/Layout/Footer.astro'
+import '../styles/global.css';
 ---
 <!doctype html>
 <html lang="es">
@@ -15,7 +16,7 @@ import Footer from '../components/Layout/Footer.astro'
 	</head>
 	<body>
 	    <Header />
-	    <main>
+	    <main class="text-white">
 		    <slot />
         </main>
         <Footer />

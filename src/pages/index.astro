@@ -1,8 +1,39 @@
 ---
-import Welcome from '../components/Index/Welcome.astro';
+import Hero from '../components/Index/Hero.astro';
+import Stats from '../components/Index/Stats.astro';
+import Qualities from '../components/Index/Qualities.astro';
+import Packages from '../components/Index/Packages.astro';
+import History from '../components/Index/History.astro';
+import Proyects from '../components/Index/Proyects.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Stratify - Desarrollo web">
-	<Welcome />
-</Layout>
+	<Hero />
+	<Stats />
+	<Qualities />
+	<Packages />
+	<History />
+	<Proyects />
+<style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-float-delayed {
+    animation: float 6s ease-in-out 2s infinite;
+  }
+  
+  .animate-float-slow {
+    animation: float 8s ease-in-out 4s infinite;
+  }
+  
+  .glow {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+</style>

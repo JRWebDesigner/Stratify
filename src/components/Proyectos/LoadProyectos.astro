@@ -1,0 +1,42 @@
+---
+import { proyectos } from "../../lib/data.js";
+---
+<section class="py-10 relative">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        proyectos.map((proyecto) => (
+          <div class="group bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300 overflow-hidden hover:transform hover:-translate-y-2">
+            <div class="relative overflow-hidden">
+              <div class="h-48 bg-gradient-to-r from-blue-600 to-purple-600 relative">
+                <img
+                  src={proyecto.image}
+                  alt={proyecto.title}
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center gap-4">
+                <a
+                  href={proyecto.site}
+                  class="bg-blue-600 text-white px-6 py-2 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105"
+                >
+                  Visitar Sitio
+                </a>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-3">{proyecto.title}</h3>
+              <p class="text-gray-300 mb-4 leading-relaxed">
+                {proyecto.description}
+              </p>
+              <div class="flex justify-between items-center text-sm text-gray-400">
+                <span>🕒 {proyecto.time}</span>
+                <span>{proyecto.type}</span>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
